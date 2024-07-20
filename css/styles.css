@@ -1,0 +1,657 @@
+* {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+.wrapper {
+  padding: 0 14rem 0 14rem;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    padding: 0 5%;
+  }
+}
+
+.mainwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+/* main {
+  min-height: 100vh;
+} */
+
+.animated-line {
+  position: absolute;
+  left: 50px;
+  top: 270px;
+  width: 7px;
+  height: 420px;
+  background-color: #2e75b8;
+  transition: height 0.5s ease-out;
+}
+#arrow {
+  position: absolute;
+  display: block;
+  left: 43px; 
+  top:690px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #2e75b8; 
+  transition: top 0.5s ease-out;
+}
+
+
+.questionButton {
+  width: 45px;
+  height: 45px;
+  bottom: 30%;
+  z-index: 3;
+  position: fixed;
+  right: 15px;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.questionButton:hover {
+  cursor: pointer;
+}
+
+
+.start {
+  position: relative;
+  margin-top: 7.5rem; 
+  margin-bottom: -12rem;
+  width: 100%;
+  height: 70rem;
+  overflow: hidden;
+}
+
+.start__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60rem;
+  object-fit: cover; 
+}
+
+.start__block {
+  float: left;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  background-color: rgba(46, 117, 184, 0.3);
+  color: #ffffff;
+  width: 100%;
+  max-width: 60rem;
+  border-radius: 1rem;
+}
+.no-style-link {
+  color: inherit;
+  cursor: pointer;
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5); 
+  font-size: 1.5rem;
+}
+
+.start__block-text {
+  font-size: 3.6rem; 
+  font-weight: 700; 
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 2rem 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.start__block p {
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5); 
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.start__block-contacts{
+    font-style: normal;
+    background-color: rgba(53, 92, 125, 0.7);
+    padding: 2rem 2rem;
+    display: block;
+    unicode-bidi: isolate;
+    border-radius: 0 0 1rem 1rem; 
+}
+.start__block-contacts span{
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5); 
+}
+
+.start__block button {
+  padding: 1rem 3rem;
+  font: 1.9rem 'Roboto Condensed', sans-serif;
+  border: 0;
+  background-color: #21a038;
+  color: #ffffff;
+  display: block;
+  margin: 2rem auto 0 auto;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease; /
+}
+.start__block button:hover {
+  background-color: #1b7e2b; 
+}
+.slider-container {
+  box-sizing: border-box;
+  position: relative;
+  align-self:center;
+  margin-top: 2rem;
+  width: 140rem;
+  overflow: hidden; 
+  border-radius: 1rem; 
+  -webkit-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+  -moz-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+  box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide a{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay_slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2); 
+}
+.overlay_slider p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.overlay_slider .plan-lecheniya{
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  padding-left: calc((100% - 600px) / 1.1);
+  margin-top: 13.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+
+.overlay_slider .gpk {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin-top: 14rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+.overlay_slider .sale-text {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  padding-left: calc((100% - 600px) / 1.1);
+  margin-top: 17rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.overlay_slider .hotel-text{
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  padding-left: calc((100% - 600px) / 1.1);
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.overlay_slider .promo-text {
+  /*background-color: #3EBEE7;*/
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: calc((100% - 600px) / 1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.overlay_slider .minsk-tourism-main {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  padding-left: calc((100% - 600px) / 1.1);
+  margin-top: 15rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+.prev-slide,
+.next-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 1;
+  background-color: #3EBEE7; 
+  padding: 0.5rem;
+  width: 4rem; 
+  height: 3rem; 
+  border-radius: 1rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid #ffffff;
+}
+.next-slide:hover, .prev-slide:hover {
+  background-color: #2e75b8; 
+}
+.prev-slide {
+  left: 1rem;
+}
+.next-slide {
+  right: 1rem;
+}
+.slider__text {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+.slider-blocks-container {
+  height: 20rem;
+  width: 140rem;
+  margin-top: -10rem;
+  display: flex;
+  gap: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.slider-block1, .slider-block2, .slider-block3 {
+  position: relative;
+  height: 18rem;
+  width: 45rem;
+  background-color: #273329;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.slider-block1 img, .slider-block2 img, .slider-block3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+  border-radius: 1rem;
+}
+.slider-text1b {
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  margin-top: 6rem;
+}
+.slider-text2b1 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-left: calc((100% - 600px) / 1.1);
+  margin-top: 6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.slider-text2b2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-left: calc((100% - 600px) / 1.1);
+  margin-top: rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.slider-text2b3 {
+  background-color: #3EBEE7;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.slider-text3b {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 6rem;
+  padding-left: calc((100% - 20rem) / 1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.slider-block1:hover, .slider-block2:hover, .slider-block3:hover {
+  -webkit-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+  -moz-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+  box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+}
+.overlay_sliderb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+@media (max-width: 1600px) {
+  .overlay_slider .plan-lecheniya{
+    font-size: 3.5rem;
+  }
+  .overlay_slider .gpk {
+    font-size: 3.5rem;
+  }
+  .overlay_slider .sale-text {
+    font-size: 3.5rem;
+  }
+  .overlay_slider .hotel-text{
+    font-size: 2.0rem;
+  }
+  .overlay_slider .promo-text {
+    /*background-color: #3EBEE7;*/
+    font-size: 2.5rem;
+  }
+  .overlay_slider .minsk-tourism-main {
+    font-size: 3.5rem;
+  }
+  .slider-container {
+    width: 100%;
+  }
+  .slider-blocks-container {
+    width: 100%;
+  } 
+  .slider-block1, .slider-block2, .slider-block3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .slider-block1 img, .slider-block2 img, .slider-block3 img{
+    object-fit: cover;
+  }
+  .slider-text1b {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .slider-text2b1 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 6rem;
+    top: 30%;
+    left: 50%;
+  }
+  .slider-text2b2 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 0.1rem;
+    top: 30%;
+    left: 50%;
+  }
+  .slider-text2b3 {
+    font-size: 2rem;
+    background-color: #3EBEE7;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 0.1rem;
+    top: 30%;
+    left: 50%;
+  }
+  .slider-text3b {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 1400px) {
+  .overlay_slider .plan-lecheniya{
+    padding-left: calc((100% - 600px) / 0.9);
+  }
+  .overlay_slider .sale-text {
+    padding-left: calc((100% - 600px) / 0.9);
+  }
+  .overlay_slider .hotel-text{
+    padding-left: calc((100% - 600px) / 0.9);
+  }
+  .overlay_slider .promo-text {
+    margin-left: calc((100% - 600px) / 0.9);
+  }
+  .overlay_slider .minsk-tourism-main {
+    padding-left: calc((100% - 600px) / 0.9);
+  }
+  .slider-container {
+    width: 100%;
+  }
+  .slider-blocks-container {
+    width: 100%;
+  } 
+  .slider-block1, .slider-block2, .slider-block3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1300px) {
+  .slider-container {
+    width: 100%;
+  }
+  
+  .slider-blocks-container {
+    width: 100%;
+  } 
+  .slider-block1, .slider-block2, .slider-block3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px){
+  .overlay_slider .plan-lecheniya{
+    padding-left: calc((100% - 600px) / 0.7);
+  }
+  .overlay_slider .sale-text {
+    padding-left: calc((100% - 600px) / 0.7);
+  }
+  .overlay_slider .hotel-text{
+    padding-left: calc((100% - 600px) / 0.7);
+  }
+  .overlay_slider .promo-text {
+    margin-left: calc((100% - 600px) / 0.7);
+  }
+  .overlay_slider .minsk-tourism-main {
+    padding-left: calc((100% - 600px) / 0.7);
+  }
+}
+@media (max-width: 1000px) {
+  .overlay_slider .gpk{
+    margin-top: 12%;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .overlay_slider .plan-lecheniya{
+    font-size: 1.8rem;
+    padding-left: 40%;
+    font-weight: bold;
+    margin-top: 12%;
+  }
+  .overlay_slider .sale-text {
+    margin-top: 16%;
+    font-size: 2.2rem;
+    padding-left: 40%;
+    font-weight: bold;
+  }
+  .overlay_slider .hotel-text{
+    font-size: 1.8rem;
+    padding-left: 45%;
+    margin-top: 0.1rem;
+    font-weight: bold;
+  }
+  .overlay_slider .promo-text {
+    font-size: 2rem;
+    margin-left: 40%;
+    margin-top: 0.1rem;
+    font-weight: bold;
+  }
+  .overlay_slider .minsk-tourism-main {
+    font-size: 2rem;
+    padding-left: 40%;
+    font-weight: bold;
+    margin-top: 12%;
+  }
+  .slider-container {
+    width: 100%;  
+    object-fit: fill;
+  }
+  .slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  .slider-blocks-container {
+    width: 88vw; 
+    overflow-x: scroll; 
+    overflow-y: hidden;
+  } 
+  .slider-block1, .slider-block2, .slider-block3 {
+    width: 300px;
+  }
+  .slider-text1b {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+  .slider-text2b1 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 6rem;
+    top: 30%;
+    left: 50%;
+    font-weight: bold;
+  }
+  .slider-text2b2 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 1rem;
+    top: 30%;
+    left: 50%;
+    font-weight: bold;
+  }
+  .slider-text2b3 {
+    font-size: 2rem;
+    background-color: #3EBEE7;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 1rem;
+    top: 30%;
+    left: 50%;
+    font-weight: bold;
+  }
+  .slider-text3b {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+  .start__block {
+    float: none; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(46, 117, 184, 0.3);
+    color: #ffffff;
+    width: 100%;
+    max-width: 60rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5); 
+  }
+  .no-style-link {
+    color: inherit;
+    cursor: pointer;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5); 
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .start__block-contacts .contact p{
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5); 
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .start__block button {
+    padding: 1rem 3rem;
+    font: 1.9rem 'Roboto Condensed', sans-serif;
+    border: 0;
+    background-color: #21a038;
+    color: #ffffff;
+    display: block;
+    margin: 2rem auto 0 auto;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+  }
+}

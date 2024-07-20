@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Медицинский туризм</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/cookies.css" />
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/client-map.css">
+    <link rel="stylesheet" href="css/advan.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/world-map.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+  </head>
+  <body>
+    <header class='header wrapper'>
+      <div class="burger"><span></span></div>
+        <div class='header__logo'>
+          <div class='header__logo-img'><a href="#start"><img src="assets\header-logo.png" alt=""></a></div>
+          <div class='header__logo-text'><p>TREATMENT<br>IN BELARUS</p></div>
+        </div> 
+        <nav class='header__nav'>
+        <ul class = "header__nav-menu">
+          <li><a href="#how-we-work">How do we work?</a></li>
+          <li><a href="#advan">Advantages</a></li>
+          <li><a href="#services">Medical services</a></li>
+          <li><a href="#form">Submit your application</a></li>
+        </ul>
+        </nav>
+        <div class='header__lang-switch'>
+          <a class='header__lang-switch-text' href="./index.html"><p class="header__lang-switch-text-rus">РУС</p></a>|
+          <p class="header__lang-switch-text" style="color: rgb(212, 212, 212);">EN</p>
+        </div>
+      
+    </header>
+    <main>
+      <div id="cookie-popup"> 
+        <p> 
+            We use cookies to improve the performance and user experience of the site.
+            <br>By staying on our site, you agree to the terms
+            of use of cookies.
+        </p> 
+        <button class="cookie-popup__button"> 
+            Accept
+        </button> 
+    </div> 
+      
+      <div class="animated-line" id="line"></div>
+      <div id="arrow"></div>
+      <a href="#overlay" onclick="location.href='#overlay'"><img src="assets\question.png" alt="" class='questionButton'></a>
+      <div class='overlay' id='overlay'>
+        <form class='modal__wrapper'>
+          <p class=modal__title>Leave a message and we will <br>
+            contact you!</p>
+            <div class=modal__field>
+              <label for="modal_name">Your name</label>
+              <input name="modal_name" id="modal_name" size='34' required></input>
+            </div>
+            <div class=modal__field>
+              <label for="modal_email">E-mail</label>
+              <input name="modal_email" id="modal_email" type='email' size='34' required></input>
+            </div>    
+            <div class=modal__field>
+              <label for="modal_question">Your question</label>
+              <textarea name="modal_question" id="modal_question" cols="30" rows="3"></textarea>
+            </div>
+            <button class='modal__button'>Send</button>
+            
+            <a class="close" href="#">×</a>
+          </form>
+      </div>
+      <div class='mainwrapper'>
+        <div id="start" class="start">
+          <video class="start__video" autoplay muted loop>
+            <source src="./assets/medvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="start__block">
+            <h1 class="start__block-text">TREATMENT IN BELARUS</h1>
+            <p>WE PROVIDE A WIDE RANGE OF MEDICAL SERVICES</p>
+            <address class="start__block-contacts">
+              <span align = "center">Please, contact us in any way convenient for you:</span>
+              <span class="contact"> 📞<a href="tel:131" class="no-style-link">131 (the Republic of Belarus)</a></span>
+              <span class="contact"> 📞<a href="tel:+375172434143" class="no-style-link">+375 (17) 243-41-43 (international number)</a></span>
+              <span class="contact"> 📞<a href="tel:+375293410131" class="no-style-link">+375 (29) 34-10-131 (Viber, WhatsApp, Telegram)</a></span>
+              <span class="contact"> ✉︎ <a href="mailto:doctor@131.by" class="no-style-link">doctor@131.by</a></span>
+              <span><form><button formaction="#form">Submit your application</button></form></span>
+                  </address>
+          </div>
+        </div>
+        <div class='slider wrapper'>
+          <div class = 'slider__text'><h1>Relevant information</h1></div>
+          <div class="slider-container">
+            <div class="slides">
+              <div class="slide">
+                <a href="#form">
+                  <div class="overlay_slider">
+                    <p class="plan-lecheniya">GET<br>A TREATMENT PLAN<br>ONLINE</p>
+                   
+                  </div>
+                  <img src="./assets/slid4.png" alt="Slide photo 4">
+                </a>
+             
+              </div>
+              <div class="slide">
+                <a href="https://gpk.gov.by/peresechenie-granitsy/bezvizovyy-vezd-dlya-inostrantsev-v-respubliku-belarus-/">
+                  <div class="overlay_slider">
+                    <p class="gpk">Visa-free entry<br>of foreigners to<br>the Republic of Belarus</p>
+                  </div>
+                  <img src="./assets/sild.png" alt="Slide photo 1">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://hotel-victoria.by/?ysclid=ly4wtrq4uy235867727">
+                  <div class="overlay_slider">
+                    <p class="sale-text">10% OFF</p>
+                    <p class="hotel-text">for accommodation at the hotels of Victoria</p>
+                    <p class="promo-text">Promo code 131BY</p>
+                  </div>
+                  <img src="./assets/slid2.png" alt="Slide photo 2">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://minsktourism.by/?ysclid=ly4oet9s84586133030">
+                  <div class="overlay_slider">
+                    <p class="minsk-tourism-main">Joint treatment<br>and rest in Minsk!</p>
+                  </div>
+                  <img src="./assets/slid3.png" alt="Slide photo 3">
+                </a>
+              </div>
+            </div>
+            <div class="prev-slide">&#10094;</div>
+            <div class="next-slide">&#10095;</div>
+          </div>
+        </div>
+        <div class='slider-blocks wrapper'>
+          <div class='slider-blocks-container'>
+           <a href="https://gpk.gov.by/peresechenie-granitsy/bezvizovyy-vezd-dlya-inostrantsev-v-respubliku-belarus-/">
+             <div class='slider-block1'>
+               <img src="./assets/sild.png" alt="Slide photo 1">
+               <div class="overlay_sliderb">
+                 <p class="slider-text1b">Visa-free entry<br>of foreigners to<br>the Republic of Belarus</p>
+               </div>
+             </div>
+           </a>
+           <a href="https://hotel-victoria.by/?ysclid=ly4wtrq4uy235867727">
+             <div class='slider-block2'>
+               <img src="./assets/slid2.png" alt="Slide photo 2">
+               <div class="overlay_sliderb">
+                 <p class="slider-text2b1">10% OFF%</p>
+                 <p class="slider-text2b2">for accommodation at the hotels of Victoria</p>
+                 <p class="slider-text2b3">Promo code 131BY</p>
+               </div>
+             </div>
+           </a>
+           <a href="https://minsktourism.by/?ysclid=ly4oet9s84586133030">
+             <div class='slider-block3'>
+               <img src="./assets/slid3.png" alt="Slide photo 3">
+               <div class="overlay_sliderb">
+                 <p class="slider-text3b">Joint treatment<br>and rest in Minsk!</p>
+               </div>
+             </div>
+           </a>
+          </div>
+         </div>
+         <div class='world-map wrapper'>
+          <h1 class="world-map_title">Tourists from more than <b><u>140 countries</u></b> are treated in Belarus</h1>
+        <div id="world-map_map">
+          <a class="world-map_copyright" href="https://academy-art.ru/assets/js/licenses.txt?ysclid=ly4enddbf3117334908">Copyright 2021 Mike Bostock</a>
+        </div>
+        <div class="world-map_tooltip" id="world-map_tooltip"></div>
+      </div>
+      <div class='client-map wrapper'>
+        <div id='how-we-work' class="client-map__title"><h1>How do we work?</h1></div>
+        <div class="client-map__first-part">
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/1.jpg" alt="">
+          </div>
+          <div class="client-map__first-arrow-block">
+            <img class="client-map__first-arrow" src="./assets/arrows/a__first.svg" alt="first-arr">
+          </div>
+          <div class="first__text-block">
+            <p class="client-map__text">We offer the services of a medical tourism coordinator - Medical Information Service 131</p>
+          </div>
+        </div>
+
+        <div class="client-map__second-part">
+          <div class="second__text-block">
+            <p class="client-map__text">You leave a request <br> on the website</p>
+          </div>
+          <div class="client-map__second-arrow-block">
+            <img class="client-map__second-arrow" src="./assets/arrows/a__second.svg" alt="second-arr">
+          </div>
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="client-map__third-part">
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/3.jpg" alt="">
+          </div>
+          <div class="client-map__third-arrow-block">
+            <img class="client-map__third-arrow" src="./assets/arrows/a__third.svg" alt="third-arr">
+          </div>
+          <div class="third__text-block">
+            <p class="client-map__text">The manager will contact you to clarify details</p>
+          </div>
+        </div>
+
+        <div class="client-map__fourth-part">
+          <div class="fourth__text-block">
+            <p class="client-map__text">We prepare a FREE treatment plan for you</p>
+          </div>
+          <div class="client-map__fourth-arrow-block">
+            <img class="client-map__second-arrow" src="./assets/arrows/a__fourth.svg" alt="fourth-arr">
+          </div>
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/4.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="client-map__fifth-part">
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/5.jpg" alt="">
+          </div>
+          <div class="client-map__fifth-arrow-block">
+            <img class="client-map__fifth-arrow" src="./assets/arrows/a__fifth.svg" alt="fifth-arr">
+          </div>
+          <div class="fifth__text-block">
+            <p class="client-map__text">You come for treatment</p>
+          </div>
+        </div>
+
+        <div class="text-result-block">
+          <p class="text-result">You are healthy. We keep in touch</p>
+        </div>
+      </div>    
+     
+        <div id="advan" class='adv wrapper'>
+          <div class="adv__title"><h1>Advantages</h1></div>
+          <div class ="adv__first-block">
+              <div class="adv__block-elem">
+                  <p>Individual approach</p>
+                  <img src="assets/adv/a1.png" alt="">
+              </div>
+              <div class="adv__block-elem">
+                  <p>All branches of medicine</p>
+                  <img src="assets/adv/a2.png" alt="">
+              </div>
+              <div class="adv__block-elem">
+                  <p>Reasonable prices</p>
+                  <img src="assets/adv/a3.png" alt="">
+              </div>
+          </div>
+          <div class="adv__second-block">
+
+              <div class="adv__block-elem" >
+                  <p>Highly-qualified medical professionals</p>
+                  <img src="assets/adv/a4.png" alt="">
+              </div>
+              <div class="adv__block-elem" >
+                  <p>Advanced equipment</p>
+                  <img src="assets/adv/a6.png" alt="">
+              </div>
+              <div class="adv__block-elem" >
+                  <p style="width: 10rem">Visa-free regime</p>
+                  <img src="assets/adv/a5.png" alt="">
+              </div>
+          </div>
+        </div>
+        <div id="services" class='services wrapper'>
+          <div class="services__title"><h1>Treatment directions</h1></div>
+            <div class="services__three-block" >
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/1.png')">
+                    <p class="services__three-block-elem-title">Transplantology</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/2.png')">
+                    <p class="services__three-block-elem-title">Oncology</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/3.png')">
+                    <p class="services__three-block-elem-title">Hematology</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+            </div>
+            <div class="services__three-block">
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/4.png')">
+                    <p class="services__three-block-elem-title">Traumatology</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/5.png')">
+                    <p class="services__three-block-elem-title">Ophthalmology</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/6.png')">
+                    <p class="services__three-block-elem-title">Obstetrics</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+            </div>
+            <div class="services__three-block">
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/7.png')">
+                    <p class="services__three-block-elem-title">Gynecology</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/8.png')">
+                    <p class="services__three-block-elem-title">Pediatric urology</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/9.png')">
+                    <p class="services__three-block-elem-title">Plastic surgery</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+            </div>
+            <div class="services__last-block">
+                <a href=""><div class="services__last-block-elem" style="background-image: url('assets/services/10.png')">
+                    <p class="services__three-block-elem-title">Bariatric surgery</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+                <a href=""><div class="services__last-block-elem" style="background-image: url('assets/services/11.png')">
+                    <p class="services__three-block-elem-title">Dentistry</p>
+                    <br>
+                    <p class="services__three-block-elem-text">learn more</p>
+                </div></a>
+            </div>
+        </div>
+        <div class='reviews wrapper'>
+          <div class="reviews__title"><h1>Reviews</h1></div>
+          <div class="reviews__content">
+            <div class="reviews__content-vid">
+              <iframe src="https://www.youtube.com/embed/AQg0QJCwtR8" title="MEDICAL INITIATIVE - REVIEW / Dentistry in Minsk / Treat teeth / Caries" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+              <div class="reviews__content-vid">
+                  <iframe src="https://www.youtube.com/embed/6kezi5TdMG8" title="MEDICAL INITIATIVE - review / Dentist - orthodontist in Minsk / Braces" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="reviews__content-vid">
+                  <iframe width="450" height="230" src="https://www.youtube.com/embed/wX-yVvD6xBE" title="MEDICAL INITIATIVE - review / Dentist in Minsk / Caries / Dental treatment in Minsk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+        
+
+        <div id="form" class='form wrapper'>
+          <h2 class='form__title'>Submit your application</h2>
+          <p class='form__description'>Fill out the form and our operator will contact you to clarify details</p>
+          <form class='form__wrapper'>
+            <div class='form__wrapper-column'>
+              <div class='form__wrapper-column-field'>
+                <label for="name">Name</label>
+                <input type="text" id='name' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="surname">Surname</label>
+                <input type="text" id='surname' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="patronymic">Patronymic <br> *if exists</label>
+                <input type="text" id='patronymic' size="28">
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="phone">Phone number</label>
+                <input type="phone" id='phone' size="28" required>
+              </div>            
+              </div>
+            <div class='form__wrapper-column'>
+              <div class='form__wrapper-column-field'>
+                <label for="email">E-mail</label>
+                <input type="email" id='email' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="citizenship">Citizenship</label>
+                <input type="text" id='citizenship' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="service">Treatment<br>direction</label>
+                <input type="text" id='service' size="28">
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="file">Attach<br>files</label>
+                <input type="file" id='file' class='file' multiple>
+              </div>
+
+              </div>
+          
+            <div class='form__wrapper-textarea'>
+              <label class='comment' for="comment">Necessary information</label>
+              <textarea name="comment" id="comment"></textarea>
+              <div class='form__wrapper-button'><button type="submit">Send</button> <p>* Here by, I confirm my consent to collecting, processing and transfer of my personal data.</p></div>
+            </div>
+
+         
+            </form>
+        </div>
+
+        <div class='FAQ wrapper'>
+          <h1 class="FAQ_title">FAQ</h1>
+        <div class="group_question">
+            <div class="question" > 
+                <p>What is a medical tourism coordinator?</p> <a class="clickable">▼</a> 
+            </div>
+            <div class="question_extended">
+                <p>A medical tourism coordinator is a company that coordinates travel abroad for the purpose of treatment. This is necessary to improve interaction between clinics, patients, insurance and transport organizations.</p>
+            </div>
+            <div class="question"> 
+                <p>Why do foreign citizens come to Belarus for treatment?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>Medical tourism in Belarus is becoming more and more in demand and popular every year. 
+                  The country has been accepting foreigners for quite a long time who have decided to undergo a complex operation or undergo 
+                  an effective course of treatment from our specialists. In recent years, the Republic of Belarus has proven 
+                  itself as one of the most promising medical tourism destinations in the CIS.
+                  <br>&emsp;There are a number of reasons why Belarus has proved one of the most promising medical tourism destinations in the CIS in recent years.
+                  <br>&emsp;1) Highly-qualified medical professionals who get advanced training in the world’s best hospitals.
+                  <br>&emsp;2) Exceptional quality of medical services and advanced equipment in hospitals.
+                  <br>&emsp;3) Cutting-edge medical technologies and progressive treatment methods.
+                  <br>&emsp;4) Reasonable prices for medical services.
+                  <br>&emsp;5) Convenient geographical location of Belarus in the center of Europe and well-developed transport communication.
+		<br>&emsp;6) Mild climate that does not require acclimatization and that contributes to faster rehabilitation.
+		<br>&emsp;7) Visa-free regime.
+</p>
+            </div>
+            <div class="question"> 
+                <p>How to find out the duration of treatment in Belarus?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>The approximate treatment timeframes indicated in the treatment plan are provided for informational purposes only. A more accurate duration can only be predicted after a physical examination of the patient.</p>
+            </div>
+            <div class="question"> 
+                <p>How to find out the amount of treatment costs?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>There are different prices for each type of treatment. Your manager will provide you with a preliminary estimate before your arrival in Minsk. Payment for the provision of medical services is carried out in Belarus. rubles at the NBRB exchange rate on the day of the event.</p>
+            </div>
+            <div class="question"> 
+                <p>Will problems arise due to the language barrier?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>Your manager will assist you during your stay and treatment. All of our recommended medical organizations have medical staff who speak English. We also provide language support in other languages ​​upon special request.</p>
+            </div>
+        </div>
+        </div>
+        <div class='newsletter wrapper'>
+          <form class=newsletter__form>
+            <div class='newsletter__form-title'><h3>Subscribe <br> to our newsletter</h3></div>
+            <div class='newsletter__form-input'><input type="email" name="newsletter__email" id="newsletter__email" placeholder='E-mail' required></div>
+            <div class='newsletter__form-button'><button type="submit" id='newsletter-button'>Subscribe</button></div>
+          </form>
+          <p class='newsletter__caption'>* Here by, I confirm my consent to collecting, processing and transfer of my personal data.</p>
+          
+        </div>
+      </div>
+  </main>
+    <footer class='footer wrapperFooter'>
+      <div class='footer__logo'>
+        <div class='footer__logo-block'>
+          <div class='footer__logo-block-img'><a href="#start"><img src="assets\header-logo.png" alt=""></a></div>
+          <div class='footer__logo-block-text'><p>TREATMENT<br>IN BELARUS</p></div>
+        </div>
+          <div class='footer__logo-block-copyright'>2025 © 131.by</div>
+        </div> 
+
+      <div class='footer__contacts'>
+        <p class='footer__contacts-title'>Please, contact us in any way convenient for you:</p>
+        <p class="tel131RB">📞 <a href="tel:131">131 (the Republic of Belarus)</a></p>
+        <p class="tel131">📞 <a href="tel:131">131</a></p>
+        <p class="tel291">📞 <a href="tel:+375293410131">+375(29) 341-01-31 (Viber, WhatsApp, Telegram)</a></p>
+        <p class="tel17">📞 <a href="tel:+375172434143">+375(17) 243-41-43 (international number)</a></p>
+        <p class="tel292">📞 <a href="tel:+375293410131">+375(29) 341-01-31 (Viber, WhatsApp, Telegram)</a></p>
+        <p class="maildoc">✉︎ <a href="mailto:doctor@131.by">doctor@131.by</a></p>
+      </div>
+      <div class='footer__socials'>
+        <div class='footer__lang-switch'>
+          <a class='footer__lang-switch-text' href="./index.html"><p class="header__lang-switch-text-rus">РУС</a>|
+          <p class="footer__lang-switch-text-en" style="color: rgb(212, 212, 212);">EN</p>
+        </div>
+          <div class='footer__socials-text'><p>Social networks</p></div>
+          <div class='footer__socials-icons'>
+            <a href=""><img src="assets\socials\facebook.svg" alt="facebook" class=''></a>
+            <a href=""><img src="assets\socials\youtube.svg" alt="youtube" class=''></a>
+            <a href=""><img src="assets\socials\telegram.svg" alt="telegram" class=''></a>
+            <a href=""><img src="assets\socials\vk.svg" alt="vk" class=''></a>
+            <a href=""><img src="assets\socials\instagram.svg" alt="instagram" class=''></a>
+            <a href=""><img src="assets\socials\classmates.svg" alt="classmates" class=''></a>
+          </div>
+          <div class='footer__socials-icons-mobile'>
+            <a href=""><img src="assets\socials\facebook.svg" alt="facebook" class=''></a>
+            <a href=""><img src="assets\socials\youtube.svg" alt="youtube" class=''></a>
+            <a href=""><img src="assets\socials\telegram.svg" alt="telegram" class=''></a>
+            <a href=""><img src="assets\socials\vk.svg" alt="vk" class=''></a>
+            <a href=""><img src="assets\socials\instagram.svg" alt="instagram" class=''></a>
+            <a href=""><img src="assets\socials\classmates.svg" alt="classmates" class=''></a>
+          </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="world-map2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 80%; /* Ensure the FAQ container takes full width */
+}
+.FAQ_title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  width: 100%; /* Ensure the title takes full width */
+}
+.group_question {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%; /* Ensure the group_question takes full width */
+}
+.question {
+  width: 100%; /* Ensure the question takes full width */
+  height: 70px;
+  background: #2e75b8;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+.question p {
+  font-family: "Comfortaa", sans-serif;
+  margin-left: 3rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.question a {
+  font-family: "Comfortaa", sans-serif;
+  padding-top: 0.4rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  font-size: 24px;
+  color: white;
+}
+.question a:hover {
+  cursor: pointer;
+}
+
+.question_extended {
+  width: 97%; /* Ensure the extended question takes full width */
+  margin-left: 1.5%;
+  height: 100%;
+  background: rgb(238, 234, 234);
+  display: none;
+  -webkit-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+  -moz-box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+  box-shadow: 5px 5px 15px 7px rgba(153, 153, 153, 0.49);
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease-out,
+    opacity 0.4s ease-out;
+  opacity: 0;
+  box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+.question_extended.expanded {
+  opacity: 1;
+}
+.question_extended p {
+  padding: 4rem;
+  font-size: 16px;
+}
+@media (max-width: 1000px) {
+  .question p {
+    font-size: 14px;
+  }
+  question a {
+    font-size: 14px;
+  }
+  .question_extended p {
+    padding: 3rem;
+    font-size: 13px;
+  }
+}

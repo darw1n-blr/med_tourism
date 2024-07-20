@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Медицинский туризм</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/cookies.css" />
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/client-map.css">
+    <link rel="stylesheet" href="css/advan.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/world-map.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+  </head>
+  <body>
+    <header class='header wrapper'>
+      <div class="burger"><span></span></div>
+        <div class='header__logo'>
+          <div class='header__logo-img'><a href="#start"><img src="assets\header-logo.png" alt=""></a></div>
+          <div class='header__logo-text'><p>МЕДИЦИНСКИЙ<br>ТУРИЗМ</p></div>
+        </div> 
+        <nav class='header__nav'>
+        <ul class = "header__nav-menu">
+          <li><a href="#how-we-work">Как мы работаем?</a></li>
+          <li><a href="#advan">Преимущества</a></li>
+          <li><a href="#services">Направления лечения</a></li>
+          <li><a href="#form">Оставить заявку</a></li>
+        </ul>
+        </nav>
+        <div class='header__lang-switch'>
+          <p class='header__lang-switch-text'><p class="header__lang-switch-text-rus" style="color: rgb(212, 212, 212);">РУС</p>|
+          <a class="header__lang-switch-text" href="./index-en.html">EN</a>
+        </div>
+      
+    </header>
+    <main>
+      <div id="cookie-popup"> 
+        <p> 
+            Мы используем файлы cookies для улучшения работы сайта.
+            <br>Оставаясь на нашем сайте, вы соглашаетесь с условиями 
+            использования файлов cookies.
+        </p> 
+        <button class="cookie-popup__button"> 
+            Принять
+        </button> 
+    </div> 
+      
+      <div class="animated-line" id="line"></div>
+      <div id="arrow"></div>
+      <a href="#overlay" onclick="location.href='#overlay'"><img src="assets\question.png" alt="" class='questionButton'></a>
+      <div class='overlay' id='overlay'>
+        <form class='modal__wrapper'>
+          <p class=modal__title>Оставьте сообщение и мы <br>
+            обязательно с вами свяжемся!</p>
+            <div class=modal__field>
+              <label for="modal_name">Ваше имя</label>
+              <input name="modal_name" id="modal_name" size='34' required></input>
+            </div>
+            <div class=modal__field>
+              <label for="modal_email">Ваш E-mail</label>
+              <input name="modal_email" id="modal_email" type='email' size='34' required></input>
+            </div>    
+            <div class=modal__field>
+              <label for="modal_question">Ваш вопрос</label>
+              <textarea name="modal_question" id="modal_question" cols="30" rows="3"></textarea>
+            </div>
+            <button class='modal__button'>Отправить</button>
+            
+            <a class="close" href="#">×</a>
+          </form>
+      </div>
+
+      <div class='mainwrapper'>
+        <div id="start" class="start">
+          <video class="start__video" autoplay muted loop>
+            <source src="./assets/medvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="start__block">
+            <h1 class="start__block-text">ЛЕЧЕНИЕ В БЕЛАРУСИ</h1>
+            <p>МЫ ПРЕДОСТАВЛЯЕМ ШИРОКИЙ СПЕКТР МЕДИЦИНСКИХ УСЛУГ</p>
+            <address class="start__block-contacts">
+              <span class="contact" align= "center"><p>КАК С НАМИ СВЯЗАТЬСЯ?</p></span>
+              <span class="contact"> 📞<a href="tel:131" class="no-style-link">131 (Республика Беларусь)</a></span>
+              <span class="contact"> 📞<a href="tel:+375172434143" class="no-style-link">+375 (17) 243-41-43 (международный номер)</a></span>
+              <span class="contact"> 📞<a href="tel:+375293410131" class="no-style-link">+375 (29) 34-10-131 (Viber, WhatsApp, Telegram)</a></span>
+              <span class="contact"> ✉︎ <a href="mailto:doctor@131.by" class="no-style-link">doctor@131.by</a></span>
+              <span><form><button formaction="#form"> ОСТАВИТЬ ЗАЯВКУ</button></form></span>
+                  </address>
+          </div>
+        </div>
+        <div class='slider wrapper'>
+          <div class = 'slider__text'><h1>Актуальная информация</h1></div>
+          <div class="slider-container">
+            <div class="slides">
+              <div class="slide">
+                <a href="#form">
+                  <div class="overlay_slider">
+                    <p class="plan-lecheniya">ПОЛУЧИТЕ<br> ПЛАН ЛЕЧЕНИЯ<br>ОНЛАЙН</p>
+                   
+                  </div>
+                  <img src="./assets/slid4.png" alt="Slide photo 4">
+                </a>
+             
+              </div>
+              <div class="slide">
+                <a href="https://gpk.gov.by/peresechenie-granitsy/bezvizovyy-vezd-dlya-inostrantsev-v-respubliku-belarus-/">
+                  <div class="overlay_slider">
+                    <p class="gpk">Безвизовый въезд<br>для иностранцев в<br>Республику Беларусь</p>
+                  </div>
+                  <img src="./assets/sild.png" alt="Slide photo 1">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://hotel-victoria.by/?ysclid=ly4wtrq4uy235867727">
+                  <div class="overlay_slider">
+                    <p class="sale-text">Скидка 10%</p>
+                    <p class="hotel-text">На проживание в сети отелей "Виктория"</p>
+                    <p class="promo-text">по промокоду 131BY</p>
+                  </div>
+                  <img src="./assets/slid2.png" alt="Slide photo 2">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://minsktourism.by/?ysclid=ly4oet9s84586133030">
+                  <div class="overlay_slider">
+                    <p class="minsk-tourism-main">Совместное лечение <br>и отдых в Минске!</p>
+                  </div>
+                  <img src="./assets/slid3.png" alt="Slide photo 3">
+                </a>
+              </div>
+            </div>
+            <div class="prev-slide">&#10094;</div>
+            <div class="next-slide">&#10095;</div>
+          </div>
+        </div>
+        <div class='slider-blocks wrapper'>
+          <div class='slider-blocks-container'>
+           <a href="https://gpk.gov.by/peresechenie-granitsy/bezvizovyy-vezd-dlya-inostrantsev-v-respubliku-belarus-/">
+             <div class='slider-block1'>
+               <img src="./assets/sild.png" alt="Slide photo 1">
+               <div class="overlay_sliderb">
+                 <p class="slider-text1b">Безвизовый въезд<br>для иностранцев в<br>Республику Беларусь</p>
+               </div>
+             </div>
+           </a>
+           <a href="https://hotel-victoria.by/?ysclid=ly4wtrq4uy235867727">
+             <div class='slider-block2'>
+               <img src="./assets/slid2.png" alt="Slide photo 2">
+               <div class="overlay_sliderb">
+                 <p class="slider-text2b1">Скидка 10%</p>
+                 <p class="slider-text2b2">На проживание в сети отелей "Виктория"</p>
+                 <p class="slider-text2b3">по промокоду 131BY</p>
+               </div>
+             </div>
+           </a>
+           <a href="https://minsktourism.by/?ysclid=ly4oet9s84586133030">
+             <div class='slider-block3'>
+               <img src="./assets/slid3.png" alt="Slide photo 3">
+               <div class="overlay_sliderb">
+                 <p class="slider-text3b">Совместное лечение <br>и отдых в Минске!</p>
+               </div>
+             </div>
+           </a>
+          </div>
+         </div>
+        <div class='world-map wrapper'>
+          <h1 class="world-map_title">Туристы из более <b><u>140 стран</u></b> лечатся в Беларуси</h1>
+        <div id="world-map_map">
+          <a class="world-map_copyright" href="https://academy-art.ru/assets/js/licenses.txt?ysclid=ly4enddbf3117334908">Copyright 2021 Mike Bostock</a>
+        </div>
+        <div class="world-map_tooltip" id="world-map_tooltip"></div>
+      </div>
+      <div class='client-map wrapper'>
+        <div id='how-we-work' class="client-map__title"><h1>Как мы работаем?</h1></div>
+        <div class="client-map__first-part">
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/1.jpg" alt="">
+          </div>
+          <div class="client-map__first-arrow-block">
+            <img class="client-map__first-arrow" src="./assets/arrows/a__first.svg" alt="first-arr">
+          </div>
+          <div class="first__text-block">
+            <p class="client-map__text">Мы предлагаем услуги координатора медицинского туризма - Медицинской информационной службы 131</p>
+          </div>
+        </div>
+
+        <div class="client-map__second-part">
+          <div class="second__text-block">
+            <p class="client-map__text">Вы оставляете заявку <br> на сайте</p>
+          </div>
+          <div class="client-map__second-arrow-block">
+            <img class="client-map__second-arrow" src="./assets/arrows/a__second.svg" alt="second-arr">
+          </div>
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="client-map__third-part">
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/3.jpg" alt="">
+          </div>
+          <div class="client-map__third-arrow-block">
+            <img class="client-map__third-arrow" src="./assets/arrows/a__third.svg" alt="third-arr">
+          </div>
+          <div class="third__text-block">
+            <p class="client-map__text">Менеджер связывается с Вами для уточнения деталей</p>
+          </div>
+        </div>
+
+        <div class="client-map__fourth-part">
+          <div class="fourth__text-block">
+            <p class="client-map__text">Мы БЕСПЛАТНО готовим  для Вас план лечения</p>
+          </div>
+          <div class="client-map__fourth-arrow-block">
+            <img class="client-map__second-arrow" src="./assets/arrows/a__fourth.svg" alt="fourth-arr">
+          </div>
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/4.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="client-map__fifth-part">
+          <div class="client-map__image-block">
+            <img class="client-map_image-block-pic" src="./assets/client-map/5.jpg" alt="">
+          </div>
+          <div class="client-map__fifth-arrow-block">
+            <img class="client-map__fifth-arrow" src="./assets/arrows/a__fifth.svg" alt="fifth-arr">
+          </div>
+          <div class="fifth__text-block">
+            <p class="client-map__text">Вы приезжаете на лечение</p>
+          </div>
+        </div>
+
+        <div class="text-result-block">
+          <p class="text-result">Вы здоровы. Мы держим обратную связь</p>
+        </div>
+      </div>    
+  
+     
+        <div id="advan" class='adv wrapper'>
+          <div class="adv__title"><h1>Преимущества</h1></div>
+          <div class ="adv__first-block">
+              <div class="adv__block-elem">
+                  <p>Индивидуальный подход</p>
+                  <img src="assets/adv/a1.png" alt="">
+              </div>
+              <div class="adv__block-elem">
+                  <p>Все направления медицины</p>
+                  <img src="assets/adv/a2.png" alt="">
+              </div>
+              <div class="adv__block-elem">
+                  <p>Оптимальная стоимость</p>
+                  <img src="assets/adv/a3.png" alt="">
+              </div>
+          </div>
+          <div class="adv__second-block">
+
+              <div class="adv__block-elem" >
+                  <p>Высококлассные специалисты</p>
+                  <img src="assets/adv/a4.png" alt="">
+              </div>
+              <div class="adv__block-elem" >
+                  <p>Современное оборудование</p>
+                  <img src="assets/adv/a6.png" alt="">
+              </div>
+              <div class="adv__block-elem" >
+                  <p style="width: 10rem">Безвизовый режим</p>
+                  <img src="assets/adv/a5.png" alt="">
+              </div>
+          </div>
+        </div>
+        <div id="services" class='services wrapper'>
+          <div class="services__title"><h1>Направления лечения</h1></div>
+            <div class="services__three-block" >
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/1.png')">
+                    <p class="services__three-block-elem-title">Трансплантология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/2.png')">
+                    <p class="services__three-block-elem-title">Онкология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/3.png')">
+                    <p class="services__three-block-elem-title">Гематология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+            </div>
+            <div class="services__three-block">
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/4.png')">
+                    <p class="services__three-block-elem-title">Травмотология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/5.png')">
+                    <p class="services__three-block-elem-title">Офтальмология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/6.png')">
+                    <p class="services__three-block-elem-title">Акушерство</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+            </div>
+            <div class="services__three-block">
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/7.png')">
+                    <p class="services__three-block-elem-title">Гинекология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/8.png')">
+                    <p class="services__three-block-elem-title">Детская урология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+                <a href=""> <div class="services__three-block-elem" style="background-image: url('assets/services/9.png')">
+                    <p class="services__three-block-elem-title">Пластическая хирургия</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+            </div>
+            <div class="services__last-block">
+                <a href=""><div class="services__last-block-elem" style="background-image: url('assets/services/10.png')">
+                    <p class="services__three-block-elem-title">Бариотрическая хирургия</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+                <a href=""><div class="services__last-block-elem" style="background-image: url('assets/services/11.png')">
+                    <p class="services__three-block-elem-title">Стоматология</p>
+                    <br>
+                    <p class="services__three-block-elem-text">узнать подробнее</p>
+                </div></a>
+            </div>
+        </div>
+        <div class='reviews wrapper'>
+          <div class="reviews__title"><h1>Отзывы</h1></div>
+          <div class="reviews__content">
+            <div class="reviews__content-vid">
+              <iframe src="https://www.youtube.com/embed/AQg0QJCwtR8" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - ОТЗЫВ / Стоматология в Минске / Лечить зубы/ Кариес" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+              <div class="reviews__content-vid">
+                  <iframe src="https://www.youtube.com/embed/6kezi5TdMG8" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - отзыв / Стоматолог - ортодонт в Минске / Брекеты" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="reviews__content-vid">
+                  <iframe width="450" height="230" src="https://www.youtube.com/embed/wX-yVvD6xBE" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - отзыв / Стоматолог в Минске / Кариес / Лечение зубов в Минске" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+        
+
+        <div id="form" class='form wrapper'>
+          <h2 class='form__title'>Оставить заявку</h2>
+          <p class='form__description'>Заполните форму и с Вами свяжется наш оператор для уточнения деталей</p>
+          <form class='form__wrapper'>
+            <div class='form__wrapper-column'>
+              <div class='form__wrapper-column-field'>
+                <label for="name">Имя</label>
+                <input type="text" id='name' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="surname">Фамилия</label>
+                <input type="text" id='surname' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="patronymic">Отчество <br> *если есть</label>
+                <input type="text" id='patronymic' size="28">
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="phone">Номер телефона</label>
+                <input type="phone" id='phone' size="28" required>
+              </div>            
+              </div>
+            <div class='form__wrapper-column'>
+              <div class='form__wrapper-column-field'>
+                <label for="email">E-mail</label>
+                <input type="email" id='email' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="citizenship">Гражданство</label>
+                <input type="text" id='citizenship' size="28" required>
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="service">Направление<br>лечения</label>
+                <input type="text" id='service' size="28">
+              </div>
+              <div class='form__wrapper-column-field'>
+                <label for="file">Прикрепить<br>файлы</label>
+                <input type="file" id='file' class='file' multiple>
+              </div>
+
+              </div>
+          
+            <div class='form__wrapper-textarea'>
+              <label class='comment' for="comment">Ваш комментарий</label>
+              <textarea name="comment" id="comment"></textarea>
+              <div class='form__wrapper-button'><button type="submit">Отправить</button> <p>Отправляя форму, вы соглашаетесь на обработку персональных данных</p></div>
+            </div>
+
+         
+            </form>
+        </div>
+
+        <div class='FAQ wrapper'>
+          <h1 class="FAQ_title">Часто задаваемые вопросы</h1>
+        <div class="group_question">
+            <div class="question" > 
+                <p>Что такое координатор медицинского туризма?</p> <a class="clickable">▼</a> 
+            </div>
+            <div class="question_extended">
+                <p>Координатор медицинского туризма – это компания, которая выполняет координационные действия по организации поездок за границу с целью лечения. Это необходимо для улучшения взаимодействия между клиниками, пациентами, страховыми и транспортными организациями.</p>
+            </div>
+            <div class="question"> 
+                <p>Почему иностранные граждане приезжают на лечение в Беларусь?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>Медицинский туризм в Беларуси с каждым годом становится все более востребованным и популярным. 
+                  Страна достаточно давно принимает иностранцев, которые решили сделать сложную операцию или пройти 
+                  эффективный курс лечения именно у наших специалистов. За последние годы Республика Беларусь зарекомендовала 
+                  себя одним самых перспективных направлений по медицинскому туризму в СНГ. 
+                  <br>&emsp;Нашей стране отдают предпочтение, потому что:
+                  <br>&emsp;1) Беларусь является политически стабильным государством с удобным географическим положением и умеренным климатом, не требующим акклиматизации.
+                  <br>&emsp;2) Мы имеем квалифицированный персонал, стажирующийся в ведущих клиниках мира.
+                  <br>&emsp;3) В медицинских учреждениях и санаториях нашей страны используются передовые технологии и прогрессивные методики лечения.
+                  <br>&emsp;4) Система здравоохранения Беларуси предоставляет качественное медицинское обслуживание со сравнительно небольшой стоимостью услуг.
+                  <br>&emsp;5) Для удобства пребывания гостей действует безвизовый режим.</p>
+            </div>
+            <div class="question"> 
+                <p>Как узнать продолжительность лечения в Беларуси?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>Приблизительные сроки прохождения лечения, указанные в плане лечения, предоставляются исключительно в ознакомительных целях. Более точную продолжительность можно спрогнозировать только после физического осмотра пациента.</p>
+            </div>
+            <div class="question"> 
+                <p>Как узнать сумму расходов на лечение?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>На каждый вид лечения существуют различные расценки. Ваш менеджер предоставит Вам предварительную смету до вашего приезда в Минск. Оплата за оказание медицинских услуг осуществляется в бел. рублях по курсу НБРБ на день проведения.</p>
+            </div>
+            <div class="question"> 
+                <p>Возникнут ли проблемы из-за языкового барьера?</p> <a class="clickable">▼</a>
+            </div>
+            <div class="question_extended">
+                <p>Ваш менеджер окажет Вам помощь во время пребывания и лечения. Во всех рекомендуемых нами медицинских организациях имеется медицинский персонал, владеющий английским языком. Также по специальному запросу мы предоставляем языковую поддержку на других языках.</p>
+            </div>
+        </div>
+        </div>
+        <div class='newsletter wrapper'>
+          <form class=newsletter__form>
+            <div class='newsletter__form-title'><h3>Подписывайтесь <br> на нашу рассылку</h3></div>
+            <div class='newsletter__form-input'><input type="email" name="newsletter__email" id="newsletter__email" placeholder='Введите E-mail' required></div>
+            <div class='newsletter__form-button'><button type="submit" id='newsletter-button'>Подписаться</button></div>
+          </form>
+          <p class='newsletter__caption'>Отправляя форму, вы соглашаетесь на обработку персональных данных для получения рекламных материалов</p>
+          
+        </div>
+      </div>
+  </main>
+    <footer class='footer wrapperFooter'>
+      <div class='footer__logo'>
+        <div class='footer__logo-block'>
+          <div class='footer__logo-block-img'><a href="#start"><img src="assets\header-logo.png" alt=""></a></div>
+          <div class='footer__logo-block-text'><p>МЕДИЦИНСКИЙ<br>ТУРИЗМ</p></div>
+        </div>
+          <div class='footer__logo-block-copyright'>2025 © 131.by</div>
+        </div> 
+
+      <div class='footer__contacts'>
+        <p class='footer__contacts-title'>КАК С НАМИ СВЯЗАТЬСЯ</p>
+        <p class="tel131RB">📞 <a href="tel:131">131 (Республика Беларусь)</a></p>
+        <p class="tel131">📞 <a href="tel:131">131</a></p>
+        <p class="tel291">📞 <a href="tel:+375293410131">+375(29) 341-01-31 (Viber, WhatsApp, Telegram)</a></p>
+        <p class="tel17">📞 <a href="tel:+375172434143">+375(17) 243-41-43 (международный туризм)</a></p>
+        <p class="tel292">📞 <a href="tel:+375293410131">+375(29) 341-01-31 (Viber, WhatsApp, Telegram)</a></p>
+        <p class="maildoc">✉︎ <a href="mailto:doctor@131.by">doctor@131.by</a></p>
+      </div>
+      <div class='footer__socials'>
+        <div class='footer__lang-switch'>
+          <p class='footer__lang-switch-text'><p class="header__lang-switch-text-rus" style="color: rgb(212, 212, 212);">РУС</p>|
+          <a class="footer__lang-switch-text-en" href="./index-en.html" >EN</a>
+        </div>
+          <div class='footer__socials-text'><p>Социальные сети</p></div>
+          <div class='footer__socials-icons'>
+            <a href=""><img src="assets\socials\facebook.svg" alt="facebook" class=''></a>
+            <a href=""><img src="assets\socials\youtube.svg" alt="youtube" class=''></a>
+            <a href=""><img src="assets\socials\telegram.svg" alt="telegram" class=''></a>
+            <a href=""><img src="assets\socials\vk.svg" alt="vk" class=''></a>
+            <a href=""><img src="assets\socials\instagram.svg" alt="instagram" class=''></a>
+            <a href=""><img src="assets\socials\classmates.svg" alt="classmates" class=''></a>
+          </div>
+          <div class='footer__socials-icons-mobile'>
+            <a href=""><img src="assets\socials\facebook.svg" alt="facebook" class=''></a>
+            <a href=""><img src="assets\socials\youtube.svg" alt="youtube" class=''></a>
+            <a href=""><img src="assets\socials\telegram.svg" alt="telegram" class=''></a>
+            <a href=""><img src="assets\socials\vk.svg" alt="vk" class=''></a>
+            <a href=""><img src="assets\socials\instagram.svg" alt="instagram" class=''></a>
+            <a href=""><img src="assets\socials\classmates.svg" alt="classmates" class=''></a>
+          </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="world-map.js"></script>
+  </body>
+</html>
