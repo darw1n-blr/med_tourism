@@ -33,7 +33,7 @@ let currentHeight = 420;
 document.addEventListener("scroll", function () {
   const line = document.getElementById("line");
   const arrow = document.getElementById("arrow");
-  const scrollY = window.scrollY || window.pageYOffset;
+  let scrollY = window.scrollY || window.pageYOffset;
   if (scrollY > maxHeight) {
     scrollY = maxHeight;
   }
