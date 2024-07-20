@@ -73,12 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
       showSlides(slideIndex + n);
     }
 
-    function currentSlide(n) {
-      showSlides(n);
-    }
+
 
     function resetInterval() {
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
         clearInterval(slideInterval);
         slideInterval = setInterval(() => {
           plusSlides(1);

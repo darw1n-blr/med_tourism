@@ -10,7 +10,7 @@
   color: black;
   text-align: center;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   animation: showDiv 4.5s forwards;
 }
@@ -23,7 +23,6 @@
 
 #cookie-popup button {
   margin-top: 15px;
-  color: black;
   padding: 10px 25px;
   color: white;
   background-color: #2e75b8;
@@ -41,10 +40,10 @@
 
 @keyframes showDiv {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   80% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
     opacity: 100%;

@@ -67,11 +67,11 @@
             обязательно с вами свяжемся!</p>
             <div class=modal__field>
               <label for="modal_name">Ваше имя</label>
-              <input name="modal_name" id="modal_name" size='34' required></input>
+              <input name="modal_name" id="modal_name" size='34' required>
             </div>
             <div class=modal__field>
               <label for="modal_email">Ваш E-mail</label>
-              <input name="modal_email" id="modal_email" type='email' size='34' required></input>
+              <input name="modal_email" id="modal_email" type='email' size='34' required>
             </div>    
             <div class=modal__field>
               <label for="modal_question">Ваш вопрос</label>
@@ -93,12 +93,12 @@
             <h1 class="start__block-text">ЛЕЧЕНИЕ В БЕЛАРУСИ</h1>
             <p>МЫ ПРЕДОСТАВЛЯЕМ ШИРОКИЙ СПЕКТР МЕДИЦИНСКИХ УСЛУГ</p>
             <address class="start__block-contacts">
-              <span class="contact" align= "center"><p>КАК С НАМИ СВЯЗАТЬСЯ?</p></span>
+              <span class="contact">КАК С НАМИ СВЯЗАТЬСЯ?</span>
               <span class="contact"> 📞<a href="tel:131" class="no-style-link">131 (Республика Беларусь)</a></span>
               <span class="contact"> 📞<a href="tel:+375172434143" class="no-style-link">+375 (17) 243-41-43 (международный номер)</a></span>
               <span class="contact"> 📞<a href="tel:+375293410131" class="no-style-link">+375 (29) 34-10-131 (Viber, WhatsApp, Telegram)</a></span>
               <span class="contact"> ✉︎ <a href="mailto:doctor@131.by" class="no-style-link">doctor@131.by</a></span>
-              <span><form><button formaction="#form"> ОСТАВИТЬ ЗАЯВКУ</button></form></span>
+              <span><button formaction="#form"> ОСТАВИТЬ ЗАЯВКУ</button></span>
                   </address>
           </div>
         </div>
@@ -355,13 +355,13 @@
           <div class="reviews__title"><h1>Отзывы</h1></div>
           <div class="reviews__content">
             <div class="reviews__content-vid">
-              <iframe src="https://www.youtube.com/embed/AQg0QJCwtR8" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - ОТЗЫВ / Стоматология в Минске / Лечить зубы/ Кариес" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/AQg0QJCwtR8" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - ОТЗЫВ / Стоматология в Минске / Лечить зубы/ Кариес"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
               <div class="reviews__content-vid">
-                  <iframe src="https://www.youtube.com/embed/6kezi5TdMG8" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - отзыв / Стоматолог - ортодонт в Минске / Брекеты" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe src="https://www.youtube.com/embed/6kezi5TdMG8" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - отзыв / Стоматолог - ортодонт в Минске / Брекеты"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="reviews__content-vid">
-                  <iframe width="450" height="230" src="https://www.youtube.com/embed/wX-yVvD6xBE" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - отзыв / Стоматолог в Минске / Кариес / Лечение зубов в Минске" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="450" height="230" src="https://www.youtube.com/embed/wX-yVvD6xBE" title="МЕДИЦИНСКАЯ ИНИЦИАТИВА - отзыв / Стоматолог в Минске / Кариес / Лечение зубов в Минске"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
           </div>
         </div>
@@ -386,7 +386,7 @@
               </div>
               <div class='form__wrapper-column-field'>
                 <label for="phone">Номер телефона</label>
-                <input type="phone" id='phone' size="28" required>
+                <input id='phone' size="28" required>
               </div>            
               </div>
             <div class='form__wrapper-column'>
@@ -466,7 +466,8 @@
         <div class='newsletter wrapper'>
           <form class=newsletter__form>
             <div class='newsletter__form-title'><h3>Подписывайтесь <br> на нашу рассылку</h3></div>
-            <div class='newsletter__form-input'><input type="email" name="newsletter__email" id="newsletter__email" placeholder='Введите E-mail' required></div>
+            <div class='newsletter__form-input'><label for="newsletter__email"></label><input id="newsletter__email" name="newsletter__email" placeholder='Введите E-mail'
+                                                                                              required></div>
             <div class='newsletter__form-button'><button type="submit" id='newsletter-button'>Подписаться</button></div>
           </form>
           <p class='newsletter__caption'>Отправляя форму, вы соглашаетесь на обработку персональных данных для получения рекламных материалов</p>

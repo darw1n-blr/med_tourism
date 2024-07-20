@@ -71,7 +71,7 @@
   font-size: 18px;
   font-weight: 500;
   margin-left: auto;
-  margin-right: 0rem;
+  margin-right: 0;
   color: inherit;
   text-decoration: none;
 }
@@ -95,7 +95,7 @@
   font-size: 18px;
   font-weight: 500;
   margin-left: auto;
-  margin-right: 0rem;
+  margin-right: 0;
   
 }
 
@@ -190,7 +190,6 @@
     justify-content: center;
   }
   .footer__socials-icons-mobile {
-    display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
